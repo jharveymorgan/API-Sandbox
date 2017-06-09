@@ -45,10 +45,7 @@ internal func exerciseOne() {
     let city = userData["results"][0]["location"]["city"].stringValue
     let state = userData["results"][0]["location"]["state"].stringValue
     let postCode = userData["results"][0]["location"]["postcode"].intValue
-    print("\(firstName) \(lastName) lives at \(streetName) in \(city), \(state), \(postCode).")
-    
-    
-    
+    /*print("\(firstName) \(lastName) lives at \(streetName) in \(city), \(state), \(postCode).") */
     
 }
 
@@ -73,7 +70,7 @@ internal func exerciseTwo() {
     
     // Uncomment this print statement when you are ready to check your code!
     
-//    print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)")
+ /*print("The top movie is \(topMovie.name) by \(topMovie.rightsOwner). It costs $\(topMovie.price) and was released on \(topMovie.releaseDate). You can view it on iTunes here: \(topMovie.link)") */
 }
 
 internal func exerciseThree() {
@@ -100,7 +97,23 @@ internal func exerciseThree() {
      */
     var allMovies: [Movie] = []
     
-    
+    for i in 0..<25 {
+        let movie = Movie(json: allMoviesData[i])
+        allMovies.append(movie)
+        
+        // check for disney movie
+        if allMovies[i].rightsOwner.contains("Disney") {
+            print("Disney Movie: \(allMovies[i].name)")
+        }
+        // check for price less than $15
+        if allMovies[i].price < 15.00 {
+            print("\(allMovies[i].name) is $\(allMovies[i].price)")
+        }
+        // check if released in 2016
+        if allMovies[i].releaseDate.contains("2016") {
+            print("\(allMovies[i].name) was realeased on \(allMovies[i].releaseDate)")
+        }
+    }
     
     
     /*
