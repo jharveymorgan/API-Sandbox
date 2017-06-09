@@ -16,7 +16,6 @@
 		BC7C84681D1D677800BA19ED /* iTunes-Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7C84661D1D677800BA19ED /* iTunes-Movies.json */; };
 		BC7C84691D1D677800BA19ED /* Random-User.json in Resources */ = {isa = PBXBuildFile; fileRef = BC7C84671D1D677800BA19ED /* Random-User.json */; };
 		BC7C846B1D20C2B000BA19ED /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C846A1D20C2B000BA19ED /* Movie.swift */; };
-		BC7C846D1D20CEEB00BA19ED /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7C846C1D20CEEB00BA19ED /* Challenges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		BC7C84661D1D677800BA19ED /* iTunes-Movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "iTunes-Movies.json"; sourceTree = "<group>"; };
 		BC7C84671D1D677800BA19ED /* Random-User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Random-User.json"; sourceTree = "<group>"; };
 		BC7C846A1D20C2B000BA19ED /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		BC7C846C1D20CEEB00BA19ED /* Challenges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		BE6F9BF20D7BFD90E54D152E /* Pods-API-Sandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-API-Sandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-API-Sandbox/Pods-API-Sandbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				BC7C84531D1D488300BA19ED /* AppDelegate.swift */,
-				BC7C846C1D20CEEB00BA19ED /* Challenges.swift */,
 				BC7C846A1D20C2B000BA19ED /* Movie.swift */,
 				BC7C84551D1D488300BA19ED /* ViewController.swift */,
 				BC7C84571D1D488300BA19ED /* Main.storyboard */,
@@ -234,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC7C84561D1D488300BA19ED /* ViewController.swift in Sources */,
-				BC7C846D1D20CEEB00BA19ED /* Challenges.swift in Sources */,
 				BC7C84541D1D488300BA19ED /* AppDelegate.swift in Sources */,
 				BC7C846B1D20C2B000BA19ED /* Movie.swift in Sources */,
 			);
